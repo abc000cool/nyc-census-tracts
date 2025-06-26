@@ -3,3 +3,33 @@ title: "Census Tracts"
 ---
 
 New York City
+
+
+```{r}
+library(tidyverse)
+
+x <- read_csv("data/nyc_tracts.csv")
+
+
+x %>%
+  # Separate the 'tract' column to extract county
+  separate(tract, into = c("tract_id", "county", "state"), sep = ";\\s*") %>%
+  # Clean up whitespace
+  mutate(
+    county = str_trim(county),
+    race = str_trim(race)
+  ) %>%
+  # Remove NA incomes if needed
+  filter(!is.na(med_income)) %>%
+  # Plot
+  ggplot(aes(x = race, y = med_income, fill = race)) +
+  geom_boxplot() +
+  facet_wrap(~ county) +
+  labs(
+    title = "Median Income by Race and County",
+    x = "Race",
+    y = "Median Income"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
