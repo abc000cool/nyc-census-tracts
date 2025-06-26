@@ -1,2 +1,4 @@
-nyc_tracts
+
 /.quarto/
+*_files
+_site
