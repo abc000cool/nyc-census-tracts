@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Census Tracts",
     "section": "",
-    "text": "New York City"
+    "text": "New York City\n\n\n\n\n\n\n\n\n\nThe plot illustrates the distribution of median household income by racial group across different counties in New York City, using census tract-level data. Each panel represents a single county, allowing for easy comparison of income disparities by race within and across counties.\nKey Observations: Queens County shows significant variation in income across racial groups. White and Asian residents tend to have higher median incomes, while Hispanic and Black residents generally report lower values, though there are notable exceptions.\nKings County (Brooklyn) demonstrates a relatively more compressed income range for Black and Hispanic populations, with generally lower medians compared to Queens or New York County.\nNew York County (Manhattan) also reveals a sharp racial income gap, with White residents having consistently higher median incomes than Hispanic or Black residents.\nSome outliers are evident in certain groups, especially where the median income for a tract is significantly higher than the group’s county-wide trend. These may reflect localized pockets of wealth or gentrifying areas.\nData Quality Notes: Some tracts have missing (NA) income values, particularly affecting the Black population in a few areas. These were excluded from the plot to ensure interpretability.\nThe plot uses boxplots, which help visualize income spread and potential outliers. However, interpretation should be cautious in counties with fewer observations per racial group."
   },
   {
     "objectID": "about.html",
